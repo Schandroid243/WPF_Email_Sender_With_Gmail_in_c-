@@ -56,8 +56,8 @@ namespace EmailSender
             {
                 if (!string.IsNullOrEmpty(accessToken))   
                 {
-                    await credentials.RevokeTokenAsync(CancellationToken.None);
-                    var jwtPayload = GoogleJsonWebSignature.ValidateAsync(credentials.Token.IdToken).Result;
+                    await credentials.RevokeTokenAsync(CancellationToken.None);//This code line is used to cancel the access token then you'll restart the app it will request you to connect again
+                    var jwtPayload = GoogleJsonWebSignature.ValidateAsync(credentials.Token.IdToken).Result;//this one has no use here Lol just to test something but don't mind ! 😂
                 }
             }
             catch (Exception ex)   
@@ -73,8 +73,8 @@ namespace EmailSender
                 credentials = await GoogleWebAuthorizationBroker.AuthorizeAsync(
                 new ClientSecrets
                 {
-                    ClientId = "23958662638-psmet94vdguncg0nt8osbrq8q5eccfji.apps.googleusercontent.com",
-                    ClientSecret = "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"
+                    ClientId = "Here enter your cliend id from the google console",
+                    ClientSecret = "Here enter your secret code which will be used as the email account password"
                 },
                 new[] { "email", "profile", "http://mail.google.com/" },
                 "user",
@@ -95,7 +95,7 @@ namespace EmailSender
                 service = new GmailService(new BaseClientService.Initializer()
                 {
                     HttpClientInitializer = credentials,
-                    ApplicationName = "EmailSender"
+                    ApplicationName = "Here enter the App name you've created in the google console"
                 });
             } 
             catch (Exception ex) 
@@ -122,9 +122,9 @@ namespace EmailSender
 
                 multipart.Add(body);
 
-                var pdfAttachment = new MimeKit.MimePart("application", "pdf")
+                var pdfAttachment = new MimeKit.MimePart("application", "pdf")//Change the MimePart according to the attachement you want to send
                 {
-                    Content = new MimeKit.MimeContent(File.OpenRead(@"C:\Users\Aurtech\Documents\brochureAurtech.pdf"), ContentEncoding.Default),
+                    Content = new MimeKit.MimeContent(File.OpenRead(@"Here enter the path of your pdf file"), ContentEncoding.Default),
                     ContentDisposition = new ContentDisposition(ContentDisposition.Attachment),
                     ContentTransferEncoding = ContentEncoding.Base64,
                     FileName = "brochureAurtech.pdf"
