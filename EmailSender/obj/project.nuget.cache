@@ -1,0 +1,21 @@
+{
+  "version": 2,
+  "dgSpecHash": "VI0b3Ei93xY/Fr6Q56rUbeQZYCKfwkzc13fHCna/CxVmAvwCVFol0LGeCjW3yIDJ2IUZ09p0NL5rejcZPdLAzQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Aurtech\\Documents\\EmailSender\\EmailSender\\EmailSender.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Aurtech\\.nuget\\packages\\bouncycastle.cryptography\\2.2.1\\bouncycastle.cryptography.2.2.1.nupkg.sha512",
+    "C:\\Users\\Aurtech\\.nuget\\packages\\google.apis\\1.62.1\\google.apis.1.62.1.nupkg.sha512",
+    "C:\\Users\\Aurtech\\.nuget\\packages\\google.apis.auth\\1.62.1\\google.apis.auth.1.62.1.nupkg.sha512",
+    "C:\\Users\\Aurtech\\.nuget\\packages\\google.apis.core\\1.62.1\\google.apis.core.1.62.1.nupkg.sha512",
+    "C:\\Users\\Aurtech\\.nuget\\packages\\google.apis.gmail.v1\\1.62.1.3196\\google.apis.gmail.v1.1.62.1.3196.nupkg.sha512",
+    "C:\\Users\\Aurtech\\.nuget\\packages\\mailkit\\4.2.0\\mailkit.4.2.0.nupkg.sha512",
+    "C:\\Users\\Aurtech\\.nuget\\packages\\mimekit\\4.2.0\\mimekit.4.2.0.nupkg.sha512",
+    "C:\\Users\\Aurtech\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\Aurtech\\.nuget\\packages\\system.formats.asn1\\7.0.0\\system.formats.asn1.7.0.0.nupkg.sha512",
+    "C:\\Users\\Aurtech\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Aurtech\\.nuget\\packages\\system.security.cryptography.pkcs\\7.0.2\\system.security.cryptography.pkcs.7.0.2.nupkg.sha512",
+    "C:\\Users\\Aurtech\\.nuget\\packages\\system.text.encoding.codepages\\7.0.0\\system.text.encoding.codepages.7.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
